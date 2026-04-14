@@ -19,6 +19,14 @@ public class PayrollCalculator {
         System.out.println("Name: "+ name);
         System.out.printf("Gross Pay: $%.2f",grossPay);
 
+        if(hoursWorked>40){
+            double  overTime = hoursWorked-40;
+            double overtimePay = payRate*1.5;
+            double totalOverpay = overtimePay * overTime;
+            System.out.printf("Gross Pay including Overtime: $%.2f",totalOverpay);
+
+        }
+
 
 
 
